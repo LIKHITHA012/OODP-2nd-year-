@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std;
+int main(){
+    int e;
+    float b;
+    int result=1;
+    cout<<"Enter base and exponent\n";
+    cin>>e>>b;
+    cout<<b<<"^"<<e<<"=";
+    while(e!=0){
+        result=result*b;
+        --e;
+    }
+    cout<<result;
+    return 0;
+}

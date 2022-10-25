@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class reverse{
+    int n,i;
+    public:
+    reverse(){
+        cin>>n;
+        cout<<endl<<"The reverse of the Entered number: ";
+		for(i=n;n>0;n=n/10)
+		{
+			cout<<n%10;
+		}
+    }
+};
+int main() {
+    reverse b;
+   
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class addamount{
+    int amount =50;
+    public:
+    addamount(){
+       amount=50;
+    } 
+    addamount(int a){
+        amount=50;
+        amount=amount+a;
+    }
+    void print(){
+        cout<<amount<<endl;
+    }};
+int main() {
+    addamount a1;
+    addamount a2(15);
+    a1.print();
+    a2.print();
+    return 0;
+}

@@ -1,0 +1,46 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+ 
+class CheckString
+{
+char str[100];
+public:
+ 
+void getString()
+{
+gets(str);
+}
+ 
+int operator ==(CheckString s)
+{
+if(!strcmp(str,s.str))
+{
+return 1;
+}
+else
+{
+return 0;
+}
+}
+};
+ 
+void main()
+{
+CheckString s1,s2;
+//clrscr();
+cout<<"Enter first string : ";
+s1.getString();
+cout<<"\nEnter second string : ";
+s2.getString();
+if(s1==s2)
+{
+cout<<"\nStrigs are Equal\n";
+}
+else
+{
+cout<<"\nStrings are Not Equal\n";
+}
+getch();
+}

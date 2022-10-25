@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class cube{
+    int a,v;
+    public:
+    int setvalue(){
+       v=a*a*a;
+    }
+    cube(){
+            cout<<"Enter the value";
+           cin>>a;
+    }
+   ~cube(){
+       cout<<"Destructor";
+   }
+   int getvalue(){
+       cout<<v<<endl;
+   }
+};
+int main() {
+    cube d;
+   d.setvalue();
+   d.getvalue();
+   return 0;
+}

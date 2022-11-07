@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class user_except
+{
+    public:
+    int  message1() { cout<<"\n this error1"; return 0; }
+      int  message2() { cout<<"\n this error2"; return 0; }
+};
+
+
+int main() {
+   int a,b,c;
+   cin>>a>>b;
+   try{
+       if(b==0){
+           throw user_except();
+             }
+           c=a/b;
+           cout<<c;
+       }
+       catch(user_except object){
+           object.message1();
+       }
+   return 0;
+}
